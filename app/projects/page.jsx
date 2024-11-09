@@ -23,8 +23,10 @@ const projects = [
   {
     num: "01",
     title: "MonsterMatcher",
-    description:
-      "A spooky twist on traditional dating apps, this Tinder-like app connects ghouls, goblins, and all things monstrous with human or monster fans looking for a frightfully fun match. Swipe through profiles of eerie characters and see if sparks (or spooky chills) fly. Created at HackUNT24",
+    description: [
+      "A spooky twist on traditional dating apps, this Tinder-like app connects ghouls, goblins, and all things monstrous with human or monster fans looking for a frightfully fun match. Swipe through profiles of eerie characters and see if sparks (or spooky chills) fly.",
+      "Created at HackUNT24",
+    ],
     stack: ["MongoDB", "Express", "React", "Node.js"],
     image:
       "https://github.com/user-attachments/assets/fafbfe49-3025-4870-9d90-75f10da39e61",
@@ -34,8 +36,10 @@ const projects = [
   {
     num: "02",
     title: "noteTaker",
-    description:
-      "A full-stack note-taking application built with the MERN (MongoDB, Express.js, React, Node.js) stack. This application allows users to create, manage, and organize their notes with a clean and intuitive interface. Created at HackUTA24",
+    description: [
+      "A full-stack note-taking application built with the MERN (MongoDB, Express.js, React, Node.js) stack. This application allows users to create, manage, and organize their notes with a clean and intuitive interface.",
+      "Created at HackUTA24",
+    ],
     stack: ["MongoDB", "Express", "React", "Node.js, Tailwind"],
     image: "https://i.imgur.com/94YdWYd.png",
     github: "https://github.com/MegaClinton/noteTaker",
@@ -44,8 +48,10 @@ const projects = [
   {
     num: "03",
     title: "Student Management System",
-    description:
-      "An efficient student data management system comparing time complexities of Linked Lists and Binary Search Trees for optimized data operations. Features include adding, searching, and updating student records, with demonstrated scalability handling 100,000 student entries generated using Python's Faker library.",
+    description: [
+      "An efficient student data management system comparing time complexities of Linked Lists and Binary Search Trees for optimized data operations.",
+      "Features include adding, searching, and updating student records, with demonstrated scalability handling 100,000 student entries generated using Python's Faker library.",
+    ],
     stack: ["C++", "Python"],
     image: null,
     github: "https://github.com/MegaClinton/Student-Management-System",
@@ -85,7 +91,17 @@ const Projects = () => {
                 {project.title}
               </h2>
               {/*description*/}
-              <p className="text-white/60">{project.description}</p>
+              <div className="space-y-2">
+                {Array.isArray(project.description) ? (
+                  project.description.map((paragraph, index) => (
+                    <p key={index} className="text-white/60">
+                      {paragraph}
+                    </p>
+                  ))
+                ) : (
+                  <p className="text-white/60">{project.description}</p>
+                )}
+              </div>
               {/*stack*/}
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => (
