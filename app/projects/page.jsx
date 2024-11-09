@@ -47,7 +47,7 @@ const projects = [
     description:
       "An efficient student data management system comparing time complexities of Linked Lists and Binary Search Trees for optimized data operations. Features include adding, searching, and updating student records, with demonstrated scalability handling 100,000 student entries generated using Python's Faker library.",
     stack: ["C++", "Python"],
-    image: "/assets/work/thumb1.png",
+    image: null,
     github: "https://github.com/MegaClinton/Student-Management-System",
     live: "",
   },
@@ -55,8 +55,6 @@ const projects = [
 
 const Projects = () => {
   const [project, setProject] = useState(projects[0]);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState("");
 
   const handleSlideChange = (swiper) => {
     // get real index when loop is true
