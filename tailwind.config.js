@@ -33,7 +33,21 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      textStroke: {
+        outline: "1px black",
+      },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".text-outline": {
+          "-webkit-text-stroke": "1px white",
+          color: "transparent",
+        },
+      };
+      addUtilities(newUtilities);
+    },
+  ],
 };
