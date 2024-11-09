@@ -18,7 +18,6 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import WorkSliderBtns from "@/components/WorkSliderBtns";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 const projects = [
   {
