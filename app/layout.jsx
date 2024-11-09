@@ -12,7 +12,7 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Clinton Nguyen's Portfolio",
+  title: "Clinton Nguyen",
   description: "Clinton Nguyen's Portfolio",
 };
 
