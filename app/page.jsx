@@ -35,6 +35,8 @@ const Home = () => {
                 <a
                   href="/assets/resume/resume.pdf"
                   download="Clinton_Nguyen_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Download Resume
                   <FiDownload className="text-xl" />
