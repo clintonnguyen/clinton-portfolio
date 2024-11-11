@@ -30,9 +30,15 @@ const Home = () => {
                 variant="outline"
                 size="lg"
                 className="flex items-center gap-2 uppercase"
+                asChild
               >
-                Download Resume
-                <FiDownload className="text-xl" />
+                <a
+                  href="/assets/resume/resume.pdf"
+                  download="Clinton_Nguyen_Resume.pdf"
+                >
+                  Download Resume
+                  <FiDownload className="text-xl" />
+                </a>
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Social

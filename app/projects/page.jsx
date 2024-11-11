@@ -172,12 +172,20 @@ const Projects = () => {
                       <div className="absolute top-0 bottom-0 z-10 w-full h-full"></div>
                       {/*image*/}
                       <div className="relative w-full h-full">
-                        <Image
-                          src={project.image}
-                          alt={project.title}
-                          fill
-                          className="object-contain"
-                        />
+                        {project.image ? (
+                          <Image
+                            src={project.image}
+                            alt={project.title}
+                            fill
+                            className="object-contain"
+                          />
+                        ) : (
+                          <div className="w-full h-full flex items-center justify-center bg-white/5">
+                            <span className="text-white/40">
+                              No image available
+                            </span>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </SwiperSlide>
