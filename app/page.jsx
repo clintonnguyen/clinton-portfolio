@@ -33,8 +33,8 @@ const Home = () => {
                 asChild
               >
                 <a
-                  href="/assets/resume/resume.pdf"
-                  download="Clinton_Nguyen_Resume.pdf"
+                  href="/api/download"
+                  download
                   target="_blank"
                   rel="noopener noreferrer"
                 >
