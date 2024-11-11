@@ -4,6 +4,7 @@ import "./globals.css";
 // components
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
+import { Analytics } from "@vercel/analytics/react";
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
