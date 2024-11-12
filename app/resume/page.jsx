@@ -72,7 +72,7 @@ const education = {
   description: "Here is where I've studied and what I've learned.",
   items: [
     {
-      institution: "Codesignal",
+      institution: "CodeSignal",
       degree: "Full-Stack Engineering with JavaScript",
       duration: "2024",
     },
