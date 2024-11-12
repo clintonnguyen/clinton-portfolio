@@ -72,12 +72,12 @@ const education = {
   description: "Here is where I've studied and what I've learned.",
   items: [
     {
-      insitution: "Codesignal",
+      institution: "Codesignal",
       degree: "Full-Stack Engineering with JavaScript",
       duration: "2024",
     },
     {
-      insitution: "University of North Texas",
+      institution: "University of North Texas",
       degree: "B.S. Computer Science",
       duration: "August 2022 - May 2026",
     },
@@ -225,7 +225,7 @@ const Resume = () => {
                           <div className="flex items-center gap-3">
                             {/*dot*/}
                             <span className="w-[6px] h-[6px] bg-accent rounded-full"></span>
-                            <p className="text-white/60">{item.insitution}</p>
+                            <p className="text-white/60">{item.institution}</p>
                           </div>
                         </li>
                       );
