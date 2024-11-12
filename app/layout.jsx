@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
       <body className={jetBrainsMono.variable}>
         <Header />
         <PageTransition>{children}</PageTransition>
+        <Analytics />
       </body>
     </html>
   );
