@@ -54,7 +54,7 @@ const projects = [
     ],
     stack: ["C++", "Python"],
     image:
-      "https://private-user-images.githubusercontent.com/20975163/386369800-7a5b76f0-271a-404f-8abf-2933c8b79248.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzE2MTkwMjAsIm5iZiI6MTczMTYxODcyMCwicGF0aCI6Ii8yMDk3NTE2My8zODYzNjk4MDAtN2E1Yjc2ZjAtMjcxYS00MDRmLThhYmYtMjkzM2M4Yjc5MjQ4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDExMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMTE0VDIxMTIwMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTM4NjRkYmNmN2MwNDI0ZTU2NWViMzllMGZiMTNlNjlhNWI4MWQ5MDViMmQ4YTcyNGRjNjhjYjliMTBlZjgzYTAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.tL2nPjfR-aeGuVUtlKw2CC0PWhpWhDtzxNaTzOBjpc8",
+      "https://github.com/user-attachments/assets/7a5b76f0-271a-404f-8abf-2933c8b79248",
     github: "https://github.com/MegaClinton/Student-Management-System",
     live: "",
   },
