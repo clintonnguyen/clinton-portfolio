@@ -18,6 +18,8 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 
+import Image from "next/image";
+
 //about data
 const about = {
   title: "About Me",
@@ -205,8 +207,17 @@ const Resume = () => {
             </TabsContent>
             {/*education*/}
             <TabsContent value="education" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{education.title}</h3>
+              <div className="flex flex-col gap-[20px] text-center xl:text-left">
+                <div className="flex items-center gap-3 mb-4">
+                  <Image
+                    src={education.icon}
+                    alt="Education Icon"
+                    width={24}
+                    height={24}
+                  />
+                  <h3 className="text-4xl font-bold">{education.title}</h3>
+                </div>
+
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {education.description}
                 </p>
@@ -237,7 +248,15 @@ const Resume = () => {
             {/*experience*/}
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[20px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{experience.title}</h3>
+                <div className="flex items-center gap-3 mb-4">
+                  <Image
+                    src={experience.icon}
+                    alt="Experience Icon"
+                    width={24}
+                    height={24}
+                  />
+                  <h3 className="text-4xl font-bold">{experience.title}</h3>{" "}
+                </div>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
@@ -267,8 +286,8 @@ const Resume = () => {
             </TabsContent>
 
             {/*skills*/}
-            <TabsContent value="skills" className="w-full h-full">
-              <div className="flex flex-col gap-[30px]">
+            <TabsContent value="skills" className="w-full">
+              <div className="flex flex-col gap-[20px]">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
                   <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
