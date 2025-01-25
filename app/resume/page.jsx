@@ -16,6 +16,7 @@ import {
   SiExpress,
   SiCplusplus,
   SiTailwindcss,
+  SiPostgresql,
 } from "react-icons/si";
 
 import Image from "next/image";
@@ -32,7 +33,7 @@ const about = {
     },
     {
       fieldName: "Email",
-      fieldValue: "clinton3122003@gmail.com",
+      fieldValue: "clintondnguyen@gmail.com",
     },
     {
       fieldName: "Phone",
@@ -139,6 +140,10 @@ const skills = {
     {
       icon: <FaGithub />,
       skillName: "github",
+    },
+    {
+      icon: <SiPostgresql />,
+      skillName: "postgresql",
     },
   ],
 };

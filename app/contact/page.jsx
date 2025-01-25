@@ -12,7 +12,7 @@ const info = [
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "clinton3122003@gmail.com",
+    description: "clintondnguyen@gmail.com",
   },
   {
     icon: <FaPhoneAlt />,
