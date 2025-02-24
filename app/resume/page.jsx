@@ -9,6 +9,7 @@ import {
   FaNodeJs,
   FaJava,
   FaGithub,
+  FaGit,
 } from "react-icons/fa";
 
 import {
@@ -17,6 +18,7 @@ import {
   SiCplusplus,
   SiTailwindcss,
   SiPostgresql,
+  SiMongodb,
 } from "react-icons/si";
 
 import Image from "next/image";
@@ -142,8 +144,16 @@ const skills = {
       skillName: "github",
     },
     {
+      icon: <FaGit />,
+      skillName: "git",
+    },
+    {
       icon: <SiPostgresql />,
       skillName: "postgresql",
+    },
+    {
+      icon: <SiMongodb />,
+      skillName: "mongodb",
     },
   ],
 };
