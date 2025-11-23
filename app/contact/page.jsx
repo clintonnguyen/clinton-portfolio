@@ -14,11 +14,6 @@ const info = [
     title: "Email",
     description: "clintondnguyen@gmail.com",
   },
-  {
-    icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: "(+1) 817-881-3675",
-  },
 ];
 
 const Contact = () => {
