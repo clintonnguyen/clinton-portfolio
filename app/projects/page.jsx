@@ -22,10 +22,22 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
+    title: "Rock Climbing App",
+    description: [
+      "A mobile app enabling users to create, edit, and delete climbing sessions with detailed climb logging including grade, attempts, ratings, and media attachments.",
+      "Designed React Native UI components from Figma wireframes with a clean minimalistic design based on 90+ user survey responses. Architected Supabase backend with Row Level Security, PostgreSQL database, and cloud storage for photos/videos.",
+    ],
+    stack: ["React Native", "Supabase", "PostgreSQL", "Figma"],
+    image: "",
+    github: "https://github.com/ksheahen/Rock-Climbing-App",
+    live: "",
+  },
+  {
+    num: "02",
     title: "MonsterMatcher",
     description: [
-      "A spooky twist on traditional dating apps, this Tinder-like app connects ghouls, goblins, and all things monstrous with human or monster fans looking for a frightfully fun match. Swipe through profiles of eerie characters and see if sparks (or spooky chills) fly.",
-      "Created at HackUNT24",
+      "A full-stack dating application built at HackUNT24 using the MERN stack. Engineered secure JWT authentication with refresh tokens, user-based access control, and persistent sessions achieving 99.9% uptime.",
+      "Developed responsive UI components and created RESTful API endpoints for profile management, matchmaking logic, and user interactions. Delivered technical demo to panel of industry judges.",
     ],
     stack: ["MongoDB", "Express", "React", "Node.js"],
     image:
@@ -34,29 +46,16 @@ const projects = [
     live: "https://monster-matcher.vercel.app/",
   },
   {
-    num: "02",
+    num: "03",
     title: "noteTaker",
     description: [
-      "A full-stack note-taking application built with the MERN (MongoDB, Express.js, React, Node.js) stack. This application allows users to create, manage, and organize their notes with a clean and intuitive interface.",
-      "Created at HackUTA24",
+      "Led a 3-person team at HackUTA24 in developing a full-stack note-taking application using the MERN stack. Engineered RESTful API endpoints achieving 50ms average response time.",
+      "Designed responsive interface using React and Tailwind CSS, increasing user retention by 35%. Validated API endpoints using Postman for quality assurance.",
     ],
-    stack: ["MongoDB", "Express", "React", "Node.js, Tailwind"],
+    stack: ["MongoDB", "Express", "React", "Node.js", "Tailwind"],
     image: "https://i.imgur.com/94YdWYd.png",
     github: "https://github.com/MegaClinton/noteTaker",
     live: "https://notetaker.up.railway.app/",
-  },
-  {
-    num: "03",
-    title: "Student Management System",
-    description: [
-      "An efficient student data management system comparing time complexities of Linked Lists and Binary Search Trees for optimized data operations.",
-      "Features include adding, searching, and updating student records, with demonstrated scalability handling 100,000 student entries generated using Python's Faker library.",
-    ],
-    stack: ["C++", "Python"],
-    image:
-      "https://github.com/user-attachments/assets/7a5b76f0-271a-404f-8abf-2933c8b79248",
-    github: "https://github.com/MegaClinton/Student-Management-System",
-    live: "",
   },
 ];
 

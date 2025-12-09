@@ -19,7 +19,15 @@ import {
   SiTailwindcss,
   SiPostgresql,
   SiMongodb,
+  SiTypescript,
+  SiUnity,
+  SiFigma,
+  SiJenkins,
+  SiTableau,
+  SiPostman,
 } from "react-icons/si";
+
+import { TbBrandReactNative } from "react-icons/tb";
 
 import Image from "next/image";
 
@@ -28,32 +36,6 @@ const about = {
   title: "About Me",
   description:
     "I am an aspiring software engineer passionate about solving complex problems through innovative solutions. With experience across various technologies and a strong drive to learn, I quickly adapt to new challenges and continuously expand my skillset.",
-  info: [
-    {
-      fieldName: "Name",
-      fieldValue: "Clinton Nguyen",
-    },
-    {
-      fieldName: "Email",
-      fieldValue: "clintondnguyen@gmail.com",
-    },
-    {
-      fieldName: "Phone",
-      fieldValue: "(+1) 817-881-3675",
-    },
-    {
-      fieldName: "Education",
-      fieldValue: "University of North Texas",
-    },
-    {
-      fieldName: "Nationality",
-      fieldValue: "American",
-    },
-    {
-      fieldName: "Location",
-      fieldValue: "Fort Worth, TX",
-    },
-  ],
 };
 
 // experience data
@@ -62,6 +44,11 @@ const experience = {
   title: "My Experience",
   description: "Here is where I've worked and what I've done.",
   items: [
+    {
+      company: "Citi",
+      position: "Software Developer",
+      duration: "June 2025 - August 2025",
+    },
     {
       company: "Edikt Studios",
       position: "Game Developer",
@@ -77,14 +64,14 @@ const education = {
   description: "Here is where I've studied and what I've learned.",
   items: [
     {
-      institution: "CodeSignal",
-      degree: "Full-Stack Engineering with JavaScript",
-      duration: "2024",
-    },
-    {
       institution: "University of North Texas",
       degree: "B.S. Computer Science",
       duration: "August 2022 - May 2026",
+    },
+    {
+      institution: "CodeSignal",
+      degree: "Full-Stack Engineering with JavaScript",
+      duration: "2024",
     },
   ],
 };
@@ -108,16 +95,20 @@ const skills = {
       skillName: "javascript",
     },
     {
+      icon: <SiTypescript />,
+      skillName: "typescript",
+    },
+    {
       icon: <FaReact />,
       skillName: "react.js",
     },
     {
-      icon: <FaNodeJs />,
-      skillName: "node.js",
+      icon: <TbBrandReactNative />,
+      skillName: "react native",
     },
     {
-      icon: <SiTailwindcss />,
-      skillName: "tailwind.css",
+      icon: <FaNodeJs />,
+      skillName: "node.js",
     },
     {
       icon: <SiNextdotjs />,
@@ -126,6 +117,10 @@ const skills = {
     {
       icon: <SiExpress />,
       skillName: "express.js",
+    },
+    {
+      icon: <SiTailwindcss />,
+      skillName: "tailwind.css",
     },
     {
       icon: <FaPython />,
@@ -140,12 +135,8 @@ const skills = {
       skillName: "c++",
     },
     {
-      icon: <FaGithub />,
-      skillName: "github",
-    },
-    {
-      icon: <FaGit />,
-      skillName: "git",
+      icon: <SiUnity />,
+      skillName: "unity",
     },
     {
       icon: <SiPostgresql />,
@@ -154,6 +145,30 @@ const skills = {
     {
       icon: <SiMongodb />,
       skillName: "mongodb",
+    },
+    {
+      icon: <FaGithub />,
+      skillName: "github",
+    },
+    {
+      icon: <FaGit />,
+      skillName: "git",
+    },
+    {
+      icon: <SiFigma />,
+      skillName: "figma",
+    },
+    {
+      icon: <SiJenkins />,
+      skillName: "jenkins",
+    },
+    {
+      icon: <SiTableau />,
+      skillName: "tableau",
+    },
+    {
+      icon: <SiPostman />,
+      skillName: "postman",
     },
   ],
 };
@@ -205,19 +220,6 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
-                  {about.info.map((item, index) => {
-                    return (
-                      <li
-                        key={index}
-                        className="flex items-center justify-center gap-4 xl:justify-start"
-                      >
-                        <span className="text-white/60">{item.fieldName}</span>
-                        <span className="text-xl">{item.fieldValue}</span>
-                      </li>
-                    );
-                  })}
-                </ul>
               </div>
             </TabsContent>
             {/*education*/}
