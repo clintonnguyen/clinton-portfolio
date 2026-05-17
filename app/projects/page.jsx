@@ -22,13 +22,13 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    title: "Rock Climbing App",
+    title: "Climbr",
     description: [
       "A mobile app enabling users to create, edit, and delete climbing sessions with detailed climb logging including grade, attempts, ratings, and media attachments.",
       "Designed React Native UI components from Figma wireframes with a clean minimalistic design based on 90+ user survey responses. Architected Supabase backend with Row Level Security, PostgreSQL database, and cloud storage for photos/videos.",
     ],
     stack: ["React Native", "Supabase", "PostgreSQL", "Figma"],
-    image: "",
+    image: "/assets/work/climbr.png",
     github: "https://github.com/ksheahen/Rock-Climbing-App",
     live: "",
   },
